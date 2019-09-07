@@ -1,9 +1,9 @@
 require "capybara/cucumber"
 require "selenium-webdriver"
-
+require "Webdrivers"
 Capybara.register_driver :selenium do |app|
-  Selenium::WebDriver::Chrome::Service.driver_path=  "C:/git/meu-projeto/chromedriver.exe"
-  Selenium::WebDriver::Remote::Capabilities.chrome
+ # Selenium::WebDriver::Chrome::Service.driver_path=  "C:/git/meu-projeto/chromedriver.exe"
+  #Selenium::WebDriver::Remote::Capabilities.chrome
   Capybara::Selenium::Driver.new(app, :browser => :chrome)
 end
 

@@ -13,9 +13,9 @@ end
   
   Quando("escolho o tamanho {string}") do |string|
     page.execute_script("document.querySelector('#{"a[qa-option='available']"}').click();")
-    sleep 3
-    click_link_or_button("a[qa-option='available']", :text => "39")
-    sleep 3
+    #click_link_or_button("a[qa-option='available']", :text => "39")
+    #find_link("a[qa-option='available']")[:href]
+
 
 
   end
